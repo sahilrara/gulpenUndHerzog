@@ -1,0 +1,29 @@
+:root {
+  --font-44: 44px;
+  --font-16: 16px;
+  --font-24: 24px;
+  --font-12: 12px;
+  --font-20: 20px;
+  --color-fafafa: #fafafa;
+  --color-014b7f: #014b7f;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  :root {
+    --font-44: 35px;
+    --font-16: 15px;
+    --font-24: 20px;
+    --font-12: 12px;
+    --font-20: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --font-44: 28px;
+    --font-16: 14px;
+    --font-24: 16px;
+    --font-12: 12px;
+    --font-20: 15px;
+  }
+}
