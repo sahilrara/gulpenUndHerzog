@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --color-212529: #212529;
+    --color-212529: #212529;
+    --color-f2f2f2: #F2F2F2;
+    --color-e0e0e0: #E0E0E0;
+    --color-fff: #fff;
+    --color-868d96: #868D96;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: var(--font-44);
+    color: var(--color-212529);
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.color-212529 {
+    color: var(--color-212529);
+}
+
+.color-014b7f {
+    color: var(--color-014b7f);
+}
+
+.mb-45 {
+    margin-bottom: 45px;
+}
+
+.padding-selecter {
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    color: #868E96;
+}
+
+.selection-field {
+    background-image: url('../img/select.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    -webkit-appearance: none;
+    width: 40.7%;
+}
+
+.a-tag-hover:hover {
+    color: var(--color-212529);
+}
+
+.selection-field:focus-visible {
+    outline: none;
+}
+
+.side-item-link-active {
+    background-color: var(--color-014b7f);
+    color: white;
+    border-radius: 50%;
+    font-size: var(--font-24);
+    font-weight: normal;
+}
+
+.side-item-link {
+    border-radius: 50%;
+    font-size: var(--font-24);
+    font-weight: normal;
+    color: var(--color-212529);
+    background-color: var(--color-f2f2f2);
+    border: 1px solid var(--color-707070);
+}
+
+.w-50px {
+    width: 50px;
+}
+
+.h-50px {
+    height: 50px;
+}
+
+.navbar {
+    background-color: var(--color-014b7f);
+    height: 74px;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.zuruck-btn {
+    font-family: Poppins, "sans-serif";
+    font-weight: 600;
+    font-size: var(--font-16);
+    color: var(--color-212529);
+    border-radius: 5px;
+    background: var(--color-f2f2f2);
+    border: 1px solid var(--color-e0e0e0);
+}
+
+.zuruck-btn:hover {
+    background-color: var(--color-f2f2f2);
+    opacity: 0.8;
+}
+
+.weiter-btn {
+    font-family: Poppins, "sans-serif";
+    font-weight: 600;
+    font-size: var(--font-16);
+    color: var(--color-fff);
+    background-color: var(--color-014b7f);
+    border-radius: 5px;
+    border: 1px solid var(--color-e0e0e0);
+}
+
+.weiter-btn:hover {
+    background-color: var(--color-014b7f);
+    opacity: 0.9;
+    color: var(--color-fff) !important;
+}
+
+.mt-107 {
+    margin-top: 107px;
+}
+
+@media (max-width: 775.98px) {
+    .selection-field {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container-xxxl {
+        max-width: 1600px;
+    }
+}
