@@ -179,9 +179,18 @@ input:focus {
     box-shadow: none !important;
 }
 
+
 @media (max-width: 775.98px) {
     .selection-field {
         width: 100%;
+    }
+
+    .w-md-45 {
+        width: 45px;
+    }
+
+    .h-md-45 {
+        height: 45px;
     }
 }
 
