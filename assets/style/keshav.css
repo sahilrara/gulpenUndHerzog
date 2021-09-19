@@ -173,6 +173,12 @@
     width: 206px;
 }
 
+input:focus {
+    border-color: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
 @media (max-width: 775.98px) {
     .selection-field {
         width: 100%;
