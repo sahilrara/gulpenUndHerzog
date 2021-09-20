@@ -11,9 +11,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <link rel="stylesheet" href="./assets/style/accidentowner.css">
-    <link rel="stylesheet" href="./assets/style/keshav.css">
-    <link rel="stylesheet" href="./assets/style/WeitereInfo.css">
+    <link rel="stylesheet" href="./assets/style/accidentowner.css" />
+    <link rel="stylesheet" href="./assets/style/keshav.css" />
+    <link rel="stylesheet" href="./assets/style/WeitereInfo.css" />
     <title>gulpen and herzog</title>
   </head>
 
@@ -3154,6 +3154,7 @@
             justify-content-xl-end justify-content-center
             d-flex
           "
+          onclick="prevFormHandler()"
         >
           <button class="btn zuruck-btn py-3 px-5 me-3">Zurück</button>
           <!-- <a href="./accidentowner.html"> -->
@@ -3174,30 +3175,29 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      function openNav() {
-        document.getElementById("myNav").style.display = "block";
-      }
-
-      function closeNav() {
-        document.getElementById("myNav").style.display = "none";
-      }
-    </script>
-
-    <script>
       // MULTIFORM JAVASCRIPT
       var formNumber = 0;
       const allFormEl = document.querySelectorAll(".form");
       allFormEl[formNumber].classList.remove("d-none");
-
+      // NEXT FORM FUNCTION
       function formHandler() {
         if (formNumber < allFormEl.length - 1) {
           formNumber = formNumber + 1;
         }
-
         allFormEl.forEach((element) => {
           element.classList.add("d-none");
         });
         allFormEl[formNumber].classList.remove("d-none");
+      }
+      // PREV FORM HANDLER
+      function prevFormHandler() {
+        if (formNumber > 0) {
+          formNumber = formNumber - 1;
+          allFormEl.forEach((element) => {
+            element.classList.add("d-none");
+          });
+          allFormEl[formNumber].classList.remove("d-none");
+        }
       }
     </script>
   </body>
