@@ -577,7 +577,7 @@
             justify-content-xl-end justify-content-center
             d-flex
           ">
-        <button class="btn zuruck-btn py-3 px-5 me-3">Zurück</button>
+        <button onclick="prevFormHandler()" class="btn zuruck-btn py-3 px-5 me-3">Zurück</button>
         <!-- <a href="./accidentowner.html"> -->
         <button onclick="formHandler()" class="btn weiter-btn text-white py-3 px-5 ms-1">
           Weiter
@@ -586,7 +586,6 @@
       </div>
     </div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
@@ -599,24 +598,31 @@
       document.getElementById("myNav").style.display = "none";
     }
   </script>
-
   <script>
     // MULTIFORM JAVASCRIPT
     var formNumber = 0
     const allFormEl = document.querySelectorAll(".form")
     allFormEl[formNumber].classList.remove("d-none")
-
-
+    // NEXT FORM FUNCTION
     function formHandler() {
       if (formNumber < allFormEl.length - 1) {
         formNumber = formNumber + 1
       }
-
       allFormEl.forEach(element => {
         element.classList.add("d-none")
       });
       allFormEl[formNumber].classList.remove("d-none")
+    }
 
+    // PREV FORM HANDLER
+    function prevFormHandler() {
+      if (formNumber > 0) {
+        formNumber = formNumber - 1
+        allFormEl.forEach((element) => {
+          element.classList.add("d-none")
+        })
+        allFormEl[formNumber].classList.remove("d-none")
+      }
     }
   </script>
 </body>
