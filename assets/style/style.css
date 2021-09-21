@@ -39,7 +39,7 @@
   .postion-fixed-top-right {
     position: fixed;
     top: 200px;
-    right: 200px;
+    right: 117px;
   }
 
   .postion-fixed-top-right-btn {
@@ -73,8 +73,12 @@
 .ff-popins {
   font-family: "Poppins";
 }
+@font-face {
+  font-family: helvectica;
+  src: url("./HelveticaNeue-Regular.ttf");
+}
 .ff-Helvetica {
-  font-family: "Helvetica";
+  font-family: helvectica;
 }
 
 .was-header {
@@ -290,7 +294,7 @@
 
 @font-face {
   font-family: helveticbold;
-  src: url("./helvetica-light-587ebe5a59211.ttf");
+  src: url("./HelveticaNeue-Regular.ttf");
 }
 
 .heading {
@@ -338,7 +342,7 @@
 }
 
 .radio-btn-text {
-  font-family: helveticbold;
+  font-family: helvectica;
   font-weight: 400 !important;
   font-size: var(--font-16);
 }

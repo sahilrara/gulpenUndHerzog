@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="./assets/img/logo-guelpen-und-herzog.png">
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -14,6 +15,9 @@
     <link rel="stylesheet" href="./assets/style/accidentowner.css" />
     <link rel="stylesheet" href="./assets/style/keshav.css" />
     <link rel="stylesheet" href="./assets/style/WeitereInfo.css" />
+    <!-- date picker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
     <title>gulpen and herzog</title>
   </head>
 
@@ -50,19 +54,10 @@
                 class="form-label ff-popins datum-label"
                 >Datum und Uhrzeit des Verkehrsunfalls</label
               >
-              <input
-                type="text"
-                class="
-                  form-control
-                  datum-placeholder
-                  input-focus-none
-                  dam-input-border
-                  ff-popins
-                "
-                placeholder="Datum und Uhrzeit eintragen"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
+               <div class="datepicker-input">
+                     <input type="text" class="w-100 border-eoeoeo px-3 br-5 py-1" placeholder="Datum und Uhrzeit eintragen" id="datepicker">
+                  </div>
+             
             </div>
             <div class="mb-5">
               <label
@@ -164,7 +159,7 @@
             </div>
           </form>
         </div>
-        <div class="col-xxl-7 mt-4 mt-xl-0 col-sm-10 col-12 mx-auto col-xl-8">
+        <div class="col-xxl-7 mt-4 mt-xl-0 col-sm-10 col-12 mx-auto col-xl-8 ">
           <div class="pic-collection overflow-x-auto d-flex p-3">
             <div class="">
               <img src="./assets/img/carclash.svg" alt="" />
@@ -217,7 +212,7 @@
           </div>
         </div>
         <div
-          class="col-xxl-1 col-12 mt-5 mt-xxl-0 d-flex justify-content-center"
+          class="col-xxl-1 col-12 mt-5 mt-xxl-0 d-flex justify-content-end "
         >
           <!-- sidebar -->
           <sidebar class="d-flex flex-xxl-column">
@@ -324,6 +319,23 @@
             >
               6
             </p>
+                 <p
+              class="
+                side-item-link
+                ff-popins
+                text-center
+                d-flex
+                my-xxl-3
+            
+                justify-content-center
+                flex-column
+                align-items-center
+                w-50px
+                h-50px
+              "
+            >
+              7
+            </p>
           </sidebar>
         </div>
       </div>
@@ -347,9 +359,10 @@
       <div class="row justify-content-between mt-4">
         <div class="col-xxl-8 col-xl-10 col-12">
           <h1 class="header mb-4">Wer ist der Unfallgeschädigte/ Halter</h1>
-          <h2 class="heading align-items-center">
+          <h2 class="heading align-items-center d-flex">
             Unfallgeschädigte
-            <span class="ms-2">
+            <div class="d-flex align-items-center">
+              <span class="ms-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -397,7 +410,8 @@
                 </g>
               </svg>
             </span>
-            <span class="sm-heading">vCard hinzufügen</span>
+            <span class="sm-heading px-2 pt-1">vCard hinzufügen</span>
+            </div>
           </h2>
           <div class="row mt-2">
             <div class="col-xxl-3 col-lg-3 col-sm-6 col-12 my-2">
@@ -520,9 +534,10 @@
               </div>
             </div>
           </div>
-          <h2 class="heading align-items-center mt-4">
+          <h2 class="heading align-items-center mt-4 d-flex">
             Fahrzeughalter
-            <span class="ms-2">
+           <div class="d-flex align-items-center ">
+              <span class="ms-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -570,7 +585,8 @@
                 </g>
               </svg>
             </span>
-            <span class="sm-heading">vCard hinzufügen</span>
+            <span class="sm-heading pt-1 px-2">vCard hinzufügen</span>
+           </div>
           </h2>
           <div class="row mt-4">
             <div class="col-xxl-3 col-lg-3 col-sm-6 col-12 my-2">
@@ -612,11 +628,9 @@
               <div class="pe-xl-3">
                 <label class="lable mb-2" for="Vorname"> Geburtsdatum</label>
                 <br />
-                <input
-                  type="text"
-                  class="px-3 br-5 py-1 placeholder border-eoeoeo w-100"
-                  placeholder="Geburtstdatum eintragen"
-                />
+                <div class="datepicker-input">
+                     <input type="text" class="w-100 border-eoeoeo px-3 br-5 py-1" placeholder="Geburtstdatum eintragen" id="datepicker1">
+                  </div>
               </div>
             </div>
             <div class="col-xxl-3 col-lg-3 col-sm-6 col-12 my-2">
@@ -667,7 +681,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-2 col-12 mt-4 mt-xl-0">
+        <div class="col-xl-2 col-12 mt-4 mt-xl-0  " >
           <sidebar
             class="
               d-flex
@@ -784,6 +798,22 @@
                 "
               >
                 6
+              </p>
+                  <p
+                class="
+                  side-item-link
+                  ff-popins
+                  text-center
+                  my-xl-3
+                  d-flex
+                  justify-content-center
+                  flex-column
+                  align-items-center
+                  w-50px
+                  h-50px
+                "
+              >
+              7
               </p>
          
           </sidebar>
@@ -1032,7 +1062,8 @@
             col-xl-3 col-12
             mt-5 mt-xl-0
             d-flex
-            justify-content-center justify-content-xl-end
+            
+            justify-content-end justify-content-xl-end
           "
         >
           <sidebar class="d-flex flex-xl-column mt-xl-5 pt-xl-5">
@@ -1140,6 +1171,22 @@
                 "
               >
                 6
+              </p>
+                 <p
+                class="
+                  side-item-link
+                  ff-popins
+                  text-center
+                  d-flex
+                  my-xl-3
+                  justify-content-center
+                  flex-column
+                  align-items-center
+                  w-50px
+                  h-50px
+                "
+              >
+               7
               </p>
         
           </sidebar>
@@ -1375,9 +1422,9 @@
               d-flex
               flex-xl-column
               mt-xl-5
-              justify-content-center
+              pe-3
               float-xl-end
-              justify-content-center
+              justify-content-end 
             "
           >
          
@@ -1483,6 +1530,24 @@
                 "
               >
                 6
+              </p>
+                
+              <p
+                class="
+                  side-item-link
+                  ff-popins
+                  text-center
+                  d-flex
+                  my-3
+               
+                  justify-content-center
+                  flex-column
+                  align-items-center
+                  w-50px
+                  h-50px
+                "
+              >
+           7
               </p>
          
           </sidebar>
@@ -1748,6 +1813,21 @@
               >
                 6
               </p>
+                  <p
+                class="
+                  side-item-link
+                  ff-popins
+                  text-center
+                  d-flex
+                  justify-content-center
+                  flex-column
+                  align-items-center
+                  w-50px
+                  h-50px
+                "
+              >
+              7
+              </p>
             </a>
           </sidebar>
         </div>
@@ -1934,9 +2014,10 @@
               d-flex
               flex-xl-column
               mt-xl-5
-              justify-content-center
+              pe-3
+              justify-content-end
               float-xl-end
-              justify-content-center
+              
             "
           >
           
@@ -2043,6 +2124,24 @@
               >
                 6
               </p>
+               
+              <p
+                class="
+                  side-item-link
+                  ff-popins
+                  text-center
+                  d-flex
+                  my-xl-3
+              
+                  justify-content-center
+                  flex-column
+                  align-items-center
+                  w-50px
+                  h-50px
+                "
+              >
+              7
+              </p>
          
           </sidebar>
         </div>
@@ -2051,7 +2150,8 @@
 
     <!-- sixth form  -->
     <div class="d-none form container container-xxxl mt-107">
-      <div class="row">
+      <div class="row"> 
+        
         <div class="col-12 col-xl-10">
           <h1 class="heading mb-2">Angaben des Absenders</h1>
           <p class="paragraph mb-0">AUTOHAUS BERND DÖRING GMBH</p>
@@ -2089,7 +2189,7 @@
             </select>
           </div>
         </div>
-        <div class="col-xl-2 col-12 mt-3 mt-xl-0 d-flex justify-content-xl-end justify-content-center ">
+        <div class="col-xl-2 col-12 mt-3 mt-xl-0 d-flex justify-content-end   pe-3">
           <sidebar class="d-flex flex-xl-column mt-4 pt-xl-2">
           
               <p
@@ -2195,6 +2295,23 @@
               "
             >
               6
+            </p>
+              <p
+              class="
+                side-item-link
+                ff-popins
+                text-center
+                d-flex
+                my-xl-3
+              
+                justify-content-center
+                flex-column
+                align-items-center
+                w-50px
+                h-50px
+              "
+            >
+             7
             </p>
           </sidebar>
         </div>
@@ -2393,7 +2510,7 @@
             
               <p
                 class="
-                  side-item-link-active
+                  side-item-link
                   ff-popins
                   my-3
                   text-center
@@ -2407,6 +2524,23 @@
                 "
               >
                 6
+              </p>
+                    <p
+                class="
+                  side-item-link-active
+                  ff-popins
+                  my-3
+                  text-center
+                  d-flex
+                  mx-2 mx-md-4 mx-xl-0
+                  justify-content-center
+                  flex-column
+                  align-items-center
+                  w-50px w-md-45
+                  h-md-45 h-50px
+                "
+              >
+                7
               </p>
             </sidebar>
           </div>
@@ -2977,7 +3111,8 @@
               col-xl-2 col-12
               mt-3 mt-xl-0
               d-flex
-              justify-content-center
+              justify-content-end
+              
               d-block d-xl-none
             "
           >
@@ -3068,7 +3203,7 @@
 
               <p
                 class="
-                  side-item-link-active
+                  side-item-link
                   ff-popins
                   text-center
                   d-flex
@@ -3081,6 +3216,22 @@
                 "
               >
                 6
+              </p>
+               <p
+                class="
+                  side-item-link-active
+                  ff-popins
+                  text-center
+                  d-flex
+                
+                  justify-content-center
+                  flex-column
+                  align-items-center
+                  w-50px w-md-45
+                  h-md-45 h-50px
+                "
+              >
+               7
               </p>
             </sidebar>
           </div>
@@ -3191,5 +3342,19 @@
       // last page 
 
     </script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+    <script>
+  $( function() {
+    $( "#datepicker1" ).datepicker();
+  } );
+  </script>
+
+ 
   </body>
 </html>
